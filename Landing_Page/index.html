@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600;700&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <title>Landing Page</title>
+</head>
+
+<body>
+  <header>
+    <h1>AI Image Generator</h1>
+
+    <section class="menu">
+      <ul class="menu-list">
+        <li>Home</li>
+        <li class="active">Services</li>
+        <li>About Us</li>
+        <li>Contact</li>
+      </ul>
+
+      <button>
+        <i class="fas fa-times"></i>
+        <i class="fas fa-bars"></i>
+      </button>
+    </section>
+  </header>
+
+  <section class="main">
+
+    <section class="left">
+      <p class="title">Generate Your Image Now</p>
+      <p class="msg">Transform your imagination into stunning visuals with our AI image generator web app. Powered by
+        cutting-edge machine
+        learning algorithms, our platform allows you to create breathtaking images effortlessly. Whether you're an
+        artist
+        seeking inspiration or a designer looking for unique assets, our intuitive interface and advanced AI technology
+        make it
+        easy to generate high-quality images tailored to your vision.</p>
+      <button class="cta">Learn More</button>
+    </section>
+
+    <section class="right">
+      <img src="Screenshot 2024-03-30 at 4.46.00 PM.png" style="height: 400px; width: 600px;" alt="Landing Image">
+    </section>
+
+  </section>
+
+  <script>
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu button');
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('opened')
+    })
+
+  </script>
+
+</body>
+
+</html>
